@@ -1,6 +1,11 @@
-cmake_minimum_required(VERSION 3.14)
-project(cpp_boilerplate)
+cmake_minimum_required(VERSION 3.2)
+project(Project_name VERSION 1.0.0)
 
-set(CMAKE_CXX_STANDARD 14)
+file(GLOB files
+        "main.cpp"
+        "libraries/*.h"
+        "libraries/*.cpp"
+        )
 
-add_executable(cpp_boilerplate main.cpp)
+
+add_executable(project_name ${files})

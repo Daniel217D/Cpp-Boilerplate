@@ -1,6 +1,11 @@
 #include <iostream>
 
+#include "libraries/example.h"
+
+using std::cout;
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    example();
+
     return 0;
 }
